@@ -1,6 +1,7 @@
 // app.js
 
 const express = require('express');
+const cors = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 
 const app = express();
@@ -8,6 +9,8 @@ const PORT = process.env.PORT || 3000;
 // const MONGO_URL = 'mongodb://localhost:27017';
 const MONGO_URL = 'mongodb+srv://karthikborra143:Mongo%40123@cluster0.h0riy2q.mongodb.net/'
 
+// Enable CORS for all routes
+app.use(cors());
 
 // Serve HTML page (you can replace this with your actual HTML page)
 app.get('/', (req, res) => {
