@@ -1,6 +1,7 @@
 // app.js
 
 const express = require('express');
+const path = require('path');
 const cors = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 
@@ -11,6 +12,9 @@ const MONGO_URL = 'mongodb+srv://karthikborra143:Mongo%40123@cluster0.h0riy2q.mo
 
 // Enable CORS for all routes
 app.use(cors());
+
+// Serve static files from the public folder
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Serve HTML page (you can replace this with your actual HTML page)
 app.get('/', (req, res) => {

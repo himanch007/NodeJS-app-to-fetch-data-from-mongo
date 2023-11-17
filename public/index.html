@@ -1,12 +1,165 @@
-<!-- public/index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Node.js App</title>
+    <title>Portfolio</title>
+
+    <!-- CSS linking -->
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to Node.js App</h1>
+<!-- navbar -->
+<nav class="nav">
+   <div class="nav-container">
+    <div class="nav-header">
+        <div class="nav-title">
+            <img src="images/logo.png" width="48" height="48" alt="logo">
+        </div>
+    </div>
+
+<input type="checkbox" name="menu-check" id="menu-burger">
+<!-- Burger Icon -->
+<label id="nav-icon1" for="menu-burger">
+    <span class="first-nav-child"></span>
+    <span class="second-nav-child"></span>
+    <span class="third-nav-child"></span>
+</label>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#blogs">Blogs</a>
+    </div>
+</div>
+</nav>
+
+<!-- about -->
+<main class="about" id="about">
+    <div class="about-section">
+        <div class="about-text">
+            <h1>About Me</h1>
+            <h2>Lorem Ipsum is simply dummy text</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="images/about.jpeg" class="image" alt="about">
+        </div>
+    </div>
+</main>
+
+<!-- education -->
+<section class="education" id="education">
+    <h1 class="pro-head">Education</h1>
+    <div class="edu-section">
+        <div class="edu-image">
+            <img src="images/education.jpg" class="image-2" alt="education">
+        </div>
+        <div class="edu-text">
+            <ul>
+                <li>01. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                <li>02. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+                <li>03. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="projects" id="projects">
+    <h1 class="pro-head">Projects</h1>
+
+    <div class="pro-section">
+        <div class="pro-img">
+            <img src="images/p-1.jpg" class="image-3" alt="">
+        </div>
+        <div class="pro-text">
+            <h2>Heading</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+    </div>
+
+    <div class="pro-section">
+        <div class="pro-img">
+            <img src="images/p-1.jpg" class="image-3" alt="">
+        </div>
+        <div class="pro-text">
+            <h2>Heading</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Experience -->
+<section class="education" id="experience">
+    <h1 class="pro-head">Experience</h1>
+    <div class="ex-section">
+        <div class="ex-div">
+            <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </p>
+        </div>
+        <div class="ex-image">
+            <img src="images/ex-1.jpg" class="image-4" alt="experience">
+        </div>
+    </div>
+    <div class="ex-section">
+        <div class="ex-image">
+            <img src="images/ex-2.jpg" class="image-4" alt="experience">
+        </div>
+        <div class="ex-div">
+            <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Blogs -->
+<section class="projects" id="blogs">
+    <h1 class="pro-head">Blogs</h1>
+
+    <div class="blog-section">
+        <div class="blog-item">
+            <img src="images/p-3.jpg" class="image-5" alt="project">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+            </p>
+        </div>
+        <div class="blog-item">
+            <img src="images/p-2.jpg" class="image-5" alt="project">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+            </p>
+        </div>
+        <div class="blog-item">
+            <img src="images/p-1.jpg" class="image-5" alt="project">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<footer class="footer">
+    <div class="footer-logos">
+        <div class="social">
+            <a href="https://twitter.com/?lang=en"><img src="images/twitter.png" width="48" height="48" alt="social"></a>
+        </div>
+        <div class="social">
+            <a href="https://github.com/"><img src="images/github.png" width="48" height="48" alt="social"></a>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.png" width="48" height="48" alt="social"></a>
+        </div>
+    </div>
+    <br>
+    <div class="mail-div">
+        <a href="mailto:info@gmail.com"><img src="images/gmail.png" width="48" height="48" alt="social">&nbsp;&nbsp;<span class="span">info@gmail.com</span></a>
+    </div>
+</footer>
+
+
 </body>
 </html>
